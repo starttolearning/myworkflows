@@ -19,7 +19,7 @@ gulp.task('coffee', function() {
         .pipe(coffee( {bare: true} )
              .on( 'error', gutil.log ) )
         .pipe(gulp.dest('components/scripts'))
-});
+}); // coffee process
 
 
 gulp.task('js', function(){
@@ -27,7 +27,7 @@ gulp.task('js', function(){
     .pipe(concat('scripts.js'))
     .pipe(browserify())
     .pipe(gulp.dest('builds/development/js'))
-});
+}); // javascript process
 
 
 gulp.task('compass', function(){
@@ -39,9 +39,10 @@ gulp.task('compass', function(){
    }))
         .on( 'error', gutil.log )
     .pipe(gulp.dest('builds/development/css'))
-});
+}); // compass process
 
-
+// default process
+gulp.task('default',['coffee','js','compass']);
 
 
 
