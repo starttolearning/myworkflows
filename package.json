@@ -1,0 +1,17 @@
+{
+  "name": "workflows",
+  "version": "1.0.0",
+  "description": "Workflows using npm, nodejs, browserify.",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "keywords": [
+    "workflows",
+    "npm",
+    "nodejs",
+    "browserify"
+  ],
+  "author": "Wilton Lee",
+  "license": "MIT"
+}
