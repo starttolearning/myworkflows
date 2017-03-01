@@ -49,7 +49,7 @@ gulp.task('watch', function(){
 
 
 // default process
-gulp.task('default',['coffee','js','compass']);
+gulp.task('default',['coffee','js','compass','watch']);
 
 
 
